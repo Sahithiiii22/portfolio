@@ -10,7 +10,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initCustomCursor();
-  initDynamicRole();
   initMobileNav();
   initProjectModals();
   initContactActions();
@@ -84,53 +83,7 @@ function initCustomCursor() {
   });
 }
 
-/* ==========================================================================
-   2. Dynamic Role Rotator (Data Scientist, ML Engineer, AI/ML)
-   ========================================================================== */
-function initDynamicRole() {
-  const roleElement = document.getElementById('dynamic-role');
-  if (!roleElement) return;
 
-  const roles = [
-    'Data Scientist',
-    'Machine Learning Engineer',
-    'AI/ML Engineer Aspirant',
-    'LLMs & RAG Researcher',
-    'Quantum ML Explorer'
-  ];
-
-  let roleIdx = 0;
-  let charIdx = 0;
-  let isDeleting = false;
-  let typingSpeed = 90;
-
-  function typeStep() {
-    const current = roles[roleIdx];
-
-    if (isDeleting) {
-      charIdx--;
-      roleElement.textContent = current.substring(0, charIdx);
-      typingSpeed = 45;
-    } else {
-      charIdx++;
-      roleElement.textContent = current.substring(0, charIdx);
-      typingSpeed = 85;
-    }
-
-    if (!isDeleting && charIdx === current.length) {
-      typingSpeed = 2200;
-      isDeleting = true;
-    } else if (isDeleting && charIdx === 0) {
-      isDeleting = false;
-      roleIdx = (roleIdx + 1) % roles.length;
-      typingSpeed = 400;
-    }
-
-    setTimeout(typeStep, typingSpeed);
-  }
-
-  setTimeout(typeStep, 600);
-}
 
 /* ==========================================================================
    3. Mobile Navigation Drawer
