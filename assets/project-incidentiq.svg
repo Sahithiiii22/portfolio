@@ -51,6 +51,6 @@
   <rect x="35" y="255" width="530" height="75" rx="10" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(99, 102, 241, 0.35)" stroke-width="1"/>
   <circle cx="70" cy="292" r="16" fill="rgba(99, 102, 241, 0.2)"/>
   <path d="M70 282 L70 302 M60 292 L80 292" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round"/>
-  <text x="100" y="285" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">IncidentIQ — Self-Learning AI Incident Response Agent</text>
-  <text x="100" y="308" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#94a3b8">Long-Term Operational Memory with Vectorize Hindsight + Multi-Strategy SRE Telemetry Retrieval</text>
+  <text x="100" y="285" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#f8fafc">IncidentIQ — Self-Learning AI Incident Response Agent</text>
+  <text x="100" y="308" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="400" fill="#94a3b8">Long-Term Operational Memory with Vectorize Hindsight + Multi-Strategy SRE Telemetry Retrieval</text>
 </svg>

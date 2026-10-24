@@ -56,6 +56,6 @@
   <rect x="40" y="255" width="520" height="75" rx="10" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1"/>
   <circle cx="75" cy="292" r="16" fill="rgba(168, 85, 247, 0.2)"/>
   <path d="M68 292 L75 285 L82 292 L75 299 Z" stroke="#c084fc" stroke-width="2" fill="none"/>
-  <text x="105" y="285" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Unified Multimodal RAG Evaluation Framework</text>
+  <text x="105" y="285" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#f8fafc">Unified Multimodal RAG Evaluation Framework</text>
   <text x="105" y="308" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#94a3b8">Comparative Evaluation Framework for Base, Self, Adaptive &amp; Agentic RAG</text>
 </svg>

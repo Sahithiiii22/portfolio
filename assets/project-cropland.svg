@@ -51,6 +51,6 @@
   <circle cx="75" cy="292" r="16" fill="rgba(16, 185, 129, 0.2)"/>
   <path d="M68 292 L73 297 L82 286" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   
-  <text x="105" y="285" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Cropland Crop-Type &amp; Health Classification</text>
+  <text x="105" y="285" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#f8fafc">Cropland Crop-Type &amp; Health Classification</text>
   <text x="105" y="308" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#94a3b8">PennyLane Quantum Circuit + Classical Neural Network with Streamlit UI</text>
 </svg>

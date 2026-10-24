@@ -1,6 +1,6 @@
 # Sahithi Tarigoppula — Data Scientist & AI/ML Engineer Portfolio
 
-A modern, high-impact developer portfolio website for **Sahithi Tarigoppula**, an aspiring **Data Scientist**, **Machine Learning Engineer**, and **AI/ML Specialist** (B.Tech in Computer Science and Engineering - Data Science, **9.02/10 CGPA & Department Topper** at Vignana Bharathi Institute of Technology).
+A modern, high-impact developer portfolio website for **Sahithi Tarigoppula**, an aspiring **Data Scientist**, **Machine Learning Engineer**, and **AI/ML Specialist** (B.Tech in Computer Science and Engineering - Data Science, **9.02/10 CGPA** at Vignana Bharathi Institute of Technology).
 
 Inspired by the editorial brutalist design aesthetic of [Akhilan's Portfolio](https://akhilan9.github.io/Portfolio/):
 - **Warm Editorial Color Scheme**: `#e8e6df` warm parchment/paper canvas paired with bold `#000000` deep black contrast sections.
@@ -83,7 +83,7 @@ npx -y serve .
 
 ## 📜 Verified Certifications & Achievements
 
-- **Department Topper**, B.Tech Computer Science and Engineering (Data Science), Vignana Bharathi Institute of Technology (**9.02/10 CGPA**).
+- **Academic Distinction**, B.Tech Computer Science and Engineering (Data Science), Vignana Bharathi Institute of Technology (**9.02/10 CGPA**).
 - **College Project Expo Presenter** for Hybrid Quantum Machine Learning.
 - [AWS Academy Machine Learning Foundations](https://github.com/Sahithiiii22/Certificates/blob/main/AWS-AIML.pdf)
 - [IBM Getting Started with Artificial Intelligence](https://github.com/Sahithiiii22/Certificates/blob/main/IBMDesign20260128-31-yzr05s.pdf)
