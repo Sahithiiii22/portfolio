@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none">
+  <defs>
+    <linearGradient id="rBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1a"/>
+      <stop offset="100%" stop-color="#18122b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="20" fill="url(#rBg)"/>
+  <rect x="2" y="2" width="596" height="356" rx="18" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="120" height="70" rx="8" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="60" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle">Base RAG</text>
+    <text x="60" y="50" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">Dense Vector</text>
+  </g>
+  <g transform="translate(175, 40)">
+    <rect x="0" y="0" width="120" height="70" rx="8" fill="rgba(99, 102, 241, 0.1)" stroke="#6366f1" stroke-width="1.5"/>
+    <text x="60" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#818cf8" text-anchor="middle">Self-RAG</text>
+    <text x="60" y="50" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">Critique Token</text>
+  </g>
+  <g transform="translate(310, 40)">
+    <rect x="0" y="0" width="120" height="70" rx="8" fill="rgba(168, 85, 247, 0.1)" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="60" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#c084fc" text-anchor="middle">Adaptive-RAG</text>
+    <text x="60" y="50" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">Query Router</text>
+  </g>
+  <g transform="translate(445, 40)">
+    <rect x="0" y="0" width="115" height="70" rx="8" fill="rgba(236, 72, 153, 0.1)" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="57" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#f472b6" text-anchor="middle">Agentic-RAG</text>
+    <text x="57" y="50" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">Multi-step Plan</text>
+  </g>
+  
+  <rect x="40" y="130" width="520" height="105" rx="12" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1.5"/>
+  <text x="65" y="156" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#e2e8f0">Multimodal Evaluation Dimensions &amp; Benchmark Metrics</text>
+  
+  <g transform="translate(65, 175)">
+    <rect x="0" y="0" width="100" height="42" rx="6" fill="#1e293b"/>
+    <text x="50" y="18" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">Retrieval Quality</text>
+    <text x="50" y="33" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">Precision@k / MRR</text>
+  </g>
+  <g transform="translate(180, 175)">
+    <rect x="0" y="0" width="100" height="42" rx="6" fill="#1e293b"/>
+    <text x="50" y="18" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#10b981" text-anchor="middle">Faithfulness</text>
+    <text x="50" y="33" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">No Hallucination</text>
+  </g>
+  <g transform="translate(295, 175)">
+    <rect x="0" y="0" width="100" height="42" rx="6" fill="#1e293b"/>
+    <text x="50" y="18" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#f59e0b" text-anchor="middle">Answer Relevance</text>
+    <text x="50" y="33" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">Semantic Alignment</text>
+  </g>
+  <g transform="translate(410, 175)">
+    <rect x="0" y="0" width="100" height="42" rx="6" fill="#1e293b"/>
+    <text x="50" y="18" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#c084fc" text-anchor="middle">Latency &amp; Cost</text>
+    <text x="50" y="33" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">Token Efficiency</text>
+  </g>
+  
+  <rect x="40" y="255" width="520" height="75" rx="10" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1"/>
+  <circle cx="75" cy="292" r="16" fill="rgba(168, 85, 247, 0.2)"/>
+  <path d="M68 292 L75 285 L82 292 L75 299 Z" stroke="#c084fc" stroke-width="2" fill="none"/>
+  <text x="105" y="285" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Unified Multimodal RAG Evaluation Framework</text>
+  <text x="105" y="308" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#94a3b8">Comparative Evaluation Framework for Base, Self, Adaptive &amp; Agentic RAG</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="certGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="24" fill="#1e293b"/>
+  <circle cx="60" cy="52" r="26" stroke="url(#certGrad)" stroke-width="3" stroke-dasharray="4 3"/>
+  <circle cx="60" cy="52" r="18" fill="rgba(99, 102, 241, 0.2)"/>
+  <path d="M52 52 L57 57 L68 46" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M50 78 L60 70 L70 78 L66 64 L54 64 Z" fill="url(#certGrad)"/>
+</svg>

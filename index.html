@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahithi Tarigoppula | Data Scientist &amp; AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Sahithi Tarigoppula — Data Scientist, Machine Learning Engineer &amp; AI/ML Aspirant. B.Tech CSE (Data Science) Department Topper (9.02 CGPA) at VBIT, AI Intern at Algorithm Aliens.">
+  <meta name="keywords" content="Sahithi Tarigoppula, Data Scientist, Machine Learning Engineer, AI/ML, Quantum Machine Learning, RAG, LangChain, Qiskit, Python">
+  <meta name="author" content="Sahithi Tarigoppula">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sahithi Tarigoppula | Data Scientist &amp; AI/ML Engineer">
+  <meta property="og:description" content="Engineering Intelligent Systems with Machine Learning, Quantum Computing, and RAG Architectures.">
+  <meta property="og:image" content="assets/Sahithi_tarigoppula.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Anton (Editorial Brutalist Headlines) & Inter (Modern UI) & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Magnetic Difference Cursor -->
+  <div id="custom-cursor" class="custom-cursor" aria-hidden="true"></div>
+
+  <!-- Noise Grain Texture Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Sticky Editorial Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand hover-target">
+        <span class="brand-name">SAHITHI</span>
+      </a>
+
+      <p class="nav-tagline">
+        Engineering Intelligent Systems For The Future.
+      </p>
+
+      <!-- Desktop Nav Links -->
+      <div class="nav-links">
+        <a href="#about" class="nav-link hover-target">About</a>
+        <a href="#experience" class="nav-link hover-target">Experience</a>
+        <a href="#projects" class="nav-link hover-target">Projects</a>
+        <a href="#skills" class="nav-link hover-target">Tech Stack</a>
+        <a href="#education" class="nav-link hover-target">Education</a>
+        <a href="#certificates" class="nav-link hover-target">Certificates</a>
+        <a href="#contact" class="nav-link hover-target">Contact</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="mobile-menu-btn hover-target" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-links">
+        <a href="#about" class="mobile-link hover-target">About</a>
+        <a href="#experience" class="mobile-link hover-target">Experience</a>
+        <a href="#projects" class="mobile-link hover-target">Projects</a>
+        <a href="#skills" class="mobile-link hover-target">Tech Stack</a>
+        <a href="#education" class="mobile-link hover-target">Education</a>
+        <a href="#certificates" class="mobile-link hover-target">Certificates</a>
+        <a href="#contact" class="mobile-link hover-target">Contact</a>
+        <a href="assets/Sahithi_tarigoppula.pdf" download="Sahithi_Tarigoppula_Resume.pdf" class="btn btn-black full-width hover-target" style="margin-top: 16px;">
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <!-- Hero Left Column -->
+        <div class="hero-left">
+          <div class="hero-status-pill hover-target">
+            <span class="status-dot"></span>
+            <span>Open to AI/ML &amp; Data Science Roles</span>
+          </div>
+
+          <h1 class="hero-title hover-target">
+            SAHITHI
+          </h1>
+
+          <div class="hero-role-line">
+            <span class="role-prefix">I am a </span>
+            <span class="dynamic-role-text" id="dynamic-role">Data Scientist</span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-lead">
+            Data Science undergraduate at <strong>Vignana Bharathi Institute of Technology</strong> 
+            (<strong>9.02/10 CGPA &bull; Department Topper</strong>). Former AI &amp; Full Stack Developer Intern at 
+            <strong>Algorithm Aliens</strong>, engineering practical machine learning pipelines, LLM-powered systems, 
+            and hybrid quantum neural networks.
+          </p>
+
+          <!-- Core Focus Badges -->
+          <div class="hero-focus-pills">
+            <span class="focus-pill hover-target">Data Scientist</span>
+            <span class="focus-pill hover-target">Machine Learning Engineer</span>
+            <span class="focus-pill hover-target">AI/ML</span>
+            <span class="focus-pill hover-target">LLMs &amp; RAG</span>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-black hover-target">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a href="assets/Sahithi_tarigoppula.pdf" class="btn btn-outline hover-target" download="Sahithi_Tarigoppula_Resume.pdf" id="hero-resume-download">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-social-row">
+            <span class="social-label">Find me on:</span>
+            <a href="https://github.com/Sahithiiii22" target="_blank" rel="noopener noreferrer" class="social-link hover-target" aria-label="GitHub Profile" title="GitHub: Sahithiiii22">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sahithi-tarigoppula-76a454337" target="_blank" rel="noopener noreferrer" class="social-link hover-target" aria-label="LinkedIn Profile" title="LinkedIn: Sahithi Tarigoppula">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:sahithi22t@gmail.com" class="social-link hover-target" aria-label="Direct Email" title="Email: sahithi22t@gmail.com">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Editorial Framed Photo Card -->
+        <div class="hero-right">
+          <div class="photo-wrapper hover-target">
+            <div class="photo-card">
+              <img src="assets/Sahithi_tarigoppula.jpeg" alt="Sahithi Tarigoppula - Data Scientist &amp; AI/ML Engineer" class="photo-img">
+              <div class="photo-badge">
+                <span class="badge-title">9.02 CGPA</span>
+                <span class="badge-sub">Dept Topper &bull; VBIT</span>
+              </div>
+            </div>
+            <!-- Decorative tilted shadow box behind photo -->
+            <div class="photo-shadow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. HERO BOTTOM: STATS & BIO SECTION -->
+    <section id="about" class="stats-bio-section">
+      <div class="container stats-bio-grid">
+        <!-- Left: Huge Brutalist Numbers -->
+        <div class="stats-column">
+          <div class="stat-item hover-target">
+            <h3 class="stat-number">9.02</h3>
+            <p class="stat-label">Current CGPA &bull; Department Topper</p>
+          </div>
+
+          <div class="stat-item hover-target">
+            <h3 class="stat-number">8+</h3>
+            <p class="stat-label">GitHub AI/ML Repositories</p>
+          </div>
+
+          <div class="stat-item hover-target">
+            <h3 class="stat-number">100%</h3>
+            <p class="stat-label">Driven to Build Intelligent Systems</p>
+          </div>
+        </div>
+
+        <!-- Right: Editorial Narrative Bio -->
+        <div class="bio-column">
+          <h2 class="editorial-heading hover-target">
+            Crafting Intelligent, Data-Driven Solutions From Research To Reality.
+          </h2>
+          <p class="bio-text">
+            I am a <strong>Computer Science and Engineering (Data Science) undergraduate</strong> at 
+            <strong>Vignana Bharathi Institute of Technology (VBIT)</strong>, Hyderabad, holding the 
+            <strong>#1 Department Topper rank</strong> with a cumulative <strong>9.02/10 CGPA</strong>.
+          </p>
+          <p class="bio-text">
+            My primary passion centers around <strong>Data Science, Machine Learning, Large Language Models (LLMs), and Retrieval-Augmented Generation (RAG)</strong>. 
+            During my internship at <strong>Algorithm Aliens Private Limited</strong> as an AI and Full Stack Developer Intern, 
+            I built end-to-end LLM-powered features and backend Python microservices.
+          </p>
+          <p class="bio-text">
+            My research projects include a unified <strong>Multimodal RAG Evaluation Framework</strong>, 
+            a <strong>Hybrid Quantum Machine Learning model using Qiskit</strong> for satellite cropland classification 
+            (presented at our college Project Expo), and <strong>IncidentIQ</strong>, an experience-driven autonomous AI incident response agent.
+          </p>
+
+          <!-- Quick Information Badges -->
+          <div class="quick-info-grid">
+            <div class="info-cell hover-target">
+              <span class="info-label">Primary Interests</span>
+              <span class="info-value">Data Scientist &bull; ML Engineer &bull; AI/ML</span>
+            </div>
+            <div class="info-cell hover-target">
+              <span class="info-label">Location</span>
+              <span class="info-value">Hyderabad, Telangana, India</span>
+            </div>
+            <div class="info-cell hover-target">
+              <span class="info-label">Spoken Languages</span>
+              <span class="info-value">English, Telugu, Hindi</span>
+            </div>
+            <div class="info-cell hover-target">
+              <span class="info-label">Current Status</span>
+              <span class="info-value">Seeking AI/ML &amp; Data Science Internships</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. WORK EXPERIENCE SECTION -->
+    <section id="experience" class="editorial-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          <h2 class="section-heading hover-target">Experience</h2>
+        </div>
+
+        <div class="experience-list">
+          <div class="timeline-entry hover-target">
+            <div class="timeline-marker"></div>
+            <div class="timeline-header">
+              <div>
+                <h3 class="entry-role">AI and Full Stack Developer Intern</h3>
+                <h4 class="entry-org">Algorithm Aliens Private Limited</h4>
+              </div>
+              <span class="entry-tag">Internship &bull; Hyderabad, India</span>
+            </div>
+            <ul class="entry-bullets">
+              <li>Built and integrated production-grade AI/ML-powered features end-to-end, including LLM-based components and semantic retrieval pipelines.</li>
+              <li>Developed and maintained modular backend services in Python, adhering to clean architecture, test-driven development, and documentation.</li>
+              <li>Collaborated with engineering peers using Git and GitHub for version control, code reviews, and CI/CD workflows.</li>
+              <li>Connected responsive frontend interfaces with AI microservices to deliver reliable real-time model inferences.</li>
+            </ul>
+            <div class="entry-tags">
+              <span class="tag-pill">Python</span>
+              <span class="tag-pill">Large Language Models (LLMs)</span>
+              <span class="tag-pill">AI/ML Integration</span>
+              <span class="tag-pill">Backend Services</span>
+              <span class="tag-pill">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECTS - DARK CONTRAST SECTION -->
+    <div class="dark-section" id="projects-container">
+      <section id="projects" class="container dark-section-inner">
+        <div class="section-title-wrap text-white">
+          <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          <h2 class="section-heading text-white hover-target">Projects</h2>
+        </div>
+
+        <p class="dark-section-sub">
+          Applied Artificial Intelligence, Machine Learning research, and autonomous systems from my active GitHub repositories.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Project 1: Unified Multimodal RAG Evaluation Framework -->
+          <article class="project-card hover-target" id="proj-rag">
+            <div class="card-media">
+              <img src="assets/project-rag.svg" alt="Multimodal RAG Evaluation Framework" class="card-img" loading="lazy">
+              <span class="card-category-badge">LLM &bull; RAG Research</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Unified Multimodal RAG Evaluation &amp; Query-Adaptive Selection</h3>
+              <p class="card-desc">
+                A research-grade framework to benchmark and compare multiple Retrieval-Augmented Generation architectures 
+                (Basic RAG, Self-RAG, Adaptive-RAG, Agentic-RAG) using standardized metrics and a dedicated Final Judge LLM decision engine.
+              </p>
+
+              <div class="card-key-points">
+                <p><strong>Evaluation Dimensions:</strong> Context Precision, Answer Relevance, Faithfulness, Latency, and Token Efficiency.</p>
+                <p><strong>Multi-Modal Ingestion:</strong> Evaluates PDFs, images, and text chunks with source-grounded evidence verification.</p>
+              </div>
+
+              <div class="card-tech-pills">
+                <span class="dark-tag">Python</span>
+                <span class="dark-tag">TypeScript</span>
+                <span class="dark-tag">RAG</span>
+                <span class="dark-tag">ChromaDB</span>
+                <span class="dark-tag">LangChain</span>
+                <span class="dark-tag">LLMs</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://github.com/Sahithiiii22/MultiModal-RAG-Evaluation-Framework-" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-sm hover-target">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+                <button class="btn btn-outline-white btn-sm hover-target project-detail-btn" data-project="rag">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Cropland Quantum Learning -->
+          <article class="project-card hover-target" id="proj-cropland">
+            <div class="card-media">
+              <img src="assets/project-cropland.svg" alt="Crop Land Classification using Hybrid Quantum Machine Learning" class="card-img" loading="lazy">
+              <span class="card-category-badge">Quantum ML &bull; Project Expo</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Hybrid Quantum Machine Learning for Cropland Classification</h3>
+              <p class="card-desc">
+                A hybrid quantum-classical machine learning model using Qiskit for satellite image-based cropland classification 
+                via spectral vegetation indices (NDVI/EVI) and quantum circuit feature mapping. Presented at the VBIT College Project Expo.
+              </p>
+
+              <div class="card-key-points">
+                <p><strong>Methodology:</strong> Multi-spectral satellite preprocessing, quantum circuit state preparation, and hybrid classical classification.</p>
+                <p><strong>Recognition:</strong> Presented to academic judges at the college-level Project Expo.</p>
+              </div>
+
+              <div class="card-tech-pills">
+                <span class="dark-tag">Python</span>
+                <span class="dark-tag">Qiskit</span>
+                <span class="dark-tag">Quantum Computing</span>
+                <span class="dark-tag">Scikit-learn</span>
+                <span class="dark-tag">NumPy</span>
+                <span class="dark-tag">Pandas</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://github.com/Sahithiiii22/cropland-quantum-learning" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-sm hover-target">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+                <button class="btn btn-outline-white btn-sm hover-target project-detail-btn" data-project="cropland">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: IncidentIQ — Self-Learning AI Incident Response Agent -->
+          <article class="project-card hover-target" id="proj-incidentiq">
+            <div class="card-media">
+              <img src="assets/project-incidentiq.svg" alt="IncidentIQ Self-Learning AI Agent" class="card-img" loading="lazy">
+              <span class="card-category-badge">Autonomous SRE Agent</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">IncidentIQ — Self-Learning AI Incident Response Agent</h3>
+              <p class="card-desc">
+                An experience-driven SRE AI agent with continuous long-term operational memory (Vectorize Hindsight). 
+                Observes error telemetry, recalls historical outages, reasons about root causes, and recommends proven runbook remediations.
+              </p>
+
+              <div class="card-key-points">
+                <p><strong>Core Innovation:</strong> Blends semantic, keyword, symptom graph, and temporal search to retain verified solutions.</p>
+                <p><strong>Impact:</strong> Dramatically slashes MTTR by eliminating repeated diagnostic rediscovery.</p>
+              </div>
+
+              <div class="card-tech-pills">
+                <span class="dark-tag">TypeScript</span>
+                <span class="dark-tag">Python</span>
+                <span class="dark-tag">AI Agents</span>
+                <span class="dark-tag">Vectorize Hindsight</span>
+                <span class="dark-tag">DevOps / SRE</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://github.com/Sahithiiii22/IncidentIQ-An-Experience-Driven-AI-Agent-for-Production-Incident-Response" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-sm hover-target">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+                <button class="btn btn-outline-white btn-sm hover-target project-detail-btn" data-project="incidentiq">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Phishing URL & Image Detector -->
+          <article class="project-card hover-target" id="proj-phishing">
+            <div class="card-media">
+              <img src="assets/project-phishing.svg" alt="Phishing URL & Image Detector" class="card-img" loading="lazy">
+              <span class="card-category-badge">Cybersecurity &bull; Vision ML</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Phishing URL &amp; Image Detection System</h3>
+              <p class="card-desc">
+                A machine learning-based cyber threat detection system analyzing suspicious URLs and image-based deceptive banners 
+                with OCR-assisted text extraction (Tesseract) and lexical feature classification in a real-time Streamlit app.
+              </p>
+
+              <div class="card-key-points">
+                <p><strong>Dual Pipeline:</strong> Lexical domain heuristic extraction combined with OCR text verification from image forms.</p>
+                <p><strong>User Interface:</strong> Live classification dashboard providing risk probability scores.</p>
+              </div>
+
+              <div class="card-tech-pills">
+                <span class="dark-tag">Python</span>
+                <span class="dark-tag">Scikit-learn</span>
+                <span class="dark-tag">Tesseract OCR</span>
+                <span class="dark-tag">Streamlit</span>
+                <span class="dark-tag">Security</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="https://github.com/Sahithiiii22/Phishing-detection-system" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-sm hover-target">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+                <button class="btn btn-outline-white btn-sm hover-target project-detail-btn" data-project="phishing">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- 5. TECH STACK - DARK CONTRAST SECTION -->
+    <div class="dark-section border-top-dark" id="skills-wrapper">
+      <section id="skills" class="container dark-section-inner">
+        <div class="section-title-wrap text-white">
+          <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          <h2 class="section-heading text-white hover-target">Tech Stack</h2>
+        </div>
+
+        <p class="dark-section-sub">
+          Core technologies, libraries, and frameworks tailored for Data Science, Machine Learning Engineering, and AI.
+        </p>
+
+        <div class="tech-stack-grid">
+          <!-- Category 1: AI / ML & Deep Learning -->
+          <div class="tech-card hover-target">
+            <h3 class="tech-cat-title">AI &amp; Machine Learning</h3>
+            <div class="tech-items-flow">
+              <span class="tech-badge">Machine Learning</span>
+              <span class="tech-badge">Deep Learning</span>
+              <span class="tech-badge">NLP</span>
+              <span class="tech-badge">Large Language Models (LLMs)</span>
+              <span class="tech-badge">Scikit-learn</span>
+              <span class="tech-badge">Qiskit (Quantum ML)</span>
+              <span class="tech-badge">Model Evaluation</span>
+            </div>
+          </div>
+
+          <!-- Category 2: AI Frameworks & Vector DBs -->
+          <div class="tech-card hover-target">
+            <h3 class="tech-cat-title">AI Frameworks &amp; Vector Stores</h3>
+            <div class="tech-items-flow">
+              <span class="tech-badge">LangChain</span>
+              <span class="tech-badge">ChromaDB</span>
+              <span class="tech-badge">Vectorize Hindsight</span>
+              <span class="tech-badge">Retrieval-Augmented Gen (RAG)</span>
+              <span class="tech-badge">Streamlit</span>
+              <span class="tech-badge">Multi-agent Planning</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Programming Languages -->
+          <div class="tech-card hover-target">
+            <h3 class="tech-cat-title">Programming Languages</h3>
+            <div class="tech-items-flow">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Java (OOP &amp; DSA)</span>
+              <span class="tech-badge">SQL (Relational Queries)</span>
+              <span class="tech-badge">R (Statistics)</span>
+              <span class="tech-badge">C</span>
+              <span class="tech-badge">TypeScript</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Data Science & Analytics -->
+          <div class="tech-card hover-target">
+            <h3 class="tech-cat-title">Data Science Libraries</h3>
+            <div class="tech-items-flow">
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">NumPy</span>
+              <span class="tech-badge">Matplotlib</span>
+              <span class="tech-badge">Feature Engineering</span>
+              <span class="tech-badge">Data Wrangling</span>
+              <span class="tech-badge">Statistical Hypothesis Testing</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Databases & Developer Tools -->
+          <div class="tech-card hover-target">
+            <h3 class="tech-cat-title">Databases &amp; Developer Tools</h3>
+            <div class="tech-items-flow">
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Git</span>
+              <span class="tech-badge">GitHub</span>
+              <span class="tech-badge">VS Code</span>
+              <span class="tech-badge">Jupyter Notebook</span>
+              <span class="tech-badge">LeetCode</span>
+            </div>
+          </div>
+
+          <!-- Category 6: Core Computer Science -->
+          <div class="tech-card hover-target">
+            <h3 class="tech-cat-title">Core CS Foundations</h3>
+            <div class="tech-items-flow">
+              <span class="tech-badge">Data Structures &amp; Algorithms</span>
+              <span class="tech-badge">Database Management Systems</span>
+              <span class="tech-badge">Object-Oriented Programming</span>
+              <span class="tech-badge">Linear Algebra</span>
+              <span class="tech-badge">Probability &amp; Statistics</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 6. EDUCATION SECTION -->
+    <section id="education" class="editorial-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          <h2 class="section-heading hover-target">Education</h2>
+        </div>
+
+        <div class="education-card-box hover-target">
+          <div class="edu-top-row">
+            <div>
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+              <h4 class="edu-branch">Computer Science and Engineering (Data Science)</h4>
+              <p class="edu-college">Vignana Bharathi Institute of Technology (VBIT), Hyderabad</p>
+            </div>
+            <div class="edu-cgpa-pill">
+              <span class="cgpa-val">9.02</span>
+              <span class="cgpa-desc">/ 10 CGPA &bull; Department Topper</span>
+            </div>
+          </div>
+
+          <p class="edu-summary-text">
+            Rigorous undergraduate degree prioritizing algorithmic problem solving, statistical machine learning, 
+            and data architectures. Recognized as the <strong>Department Topper</strong> for consistent #1 academic standing 
+            throughout the curriculum.
+          </p>
+
+          <h5 class="edu-coursework-title">Relevant Core Coursework</h5>
+          <div class="coursework-flow">
+            <span class="tag-pill">Data Structures &amp; Algorithms</span>
+            <span class="tag-pill">Machine Learning &amp; Deep Learning</span>
+            <span class="tag-pill">Database Management Systems (DBMS)</span>
+            <span class="tag-pill">Probability &amp; Statistics for Data Science</span>
+            <span class="tag-pill">Linear Algebra &amp; Optimization</span>
+            <span class="tag-pill">Object-Oriented Programming in Java</span>
+            <span class="tag-pill">Natural Language Processing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CERTIFICATES & ACHIEVEMENTS SECTION -->
+    <section id="certificates" class="editorial-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          <h2 class="section-heading hover-target">Certificates &amp; Achievements</h2>
+        </div>
+
+        <p class="section-subtitle-text">
+          Verified industry credentials and institutional academic honors directly verifiable through my GitHub repository.
+        </p>
+
+        <div class="certificates-grid">
+          <!-- Achievement 1: Department Topper -->
+          <div class="cert-box hover-target">
+            <div class="cert-header">
+              <span class="cert-tag gold">Academic Distinction</span>
+              <span class="cert-date">2023 &ndash; Present</span>
+            </div>
+            <h3 class="cert-name">Department Topper, B.Tech CSE (Data Science)</h3>
+            <p class="cert-issuer">Conferred by: <strong>Vignana Bharathi Institute of Technology</strong></p>
+            <p class="cert-details">
+              Secured the 1st rank in the department with an outstanding cumulative 9.02/10 CGPA.
+            </p>
+          </div>
+
+          <!-- Achievement 2: Project Expo Presenter -->
+          <div class="cert-box hover-target">
+            <div class="cert-header">
+              <span class="cert-tag">Project Expo</span>
+              <span class="cert-date">2026</span>
+            </div>
+            <h3 class="cert-name">College Project Expo Presenter &bull; Quantum ML</h3>
+            <p class="cert-issuer">Organized by: <strong>VBIT College-Level Project Expo</strong></p>
+            <p class="cert-details">
+              Demonstrated the Hybrid Quantum-Classical Machine Learning model for satellite cropland classification using Qiskit.
+            </p>
+            <a href="https://github.com/Sahithiiii22/cropland-quantum-learning" target="_blank" rel="noopener noreferrer" class="cert-pdf-link hover-target">
+              View Repository &rarr;
+            </a>
+          </div>
+
+          <!-- Cert 1: AWS -->
+          <div class="cert-box hover-target">
+            <div class="cert-header">
+              <span class="cert-tag">AWS Academy</span>
+              <span class="cert-date">Verified</span>
+            </div>
+            <h3 class="cert-name">AWS Academy Machine Learning Foundations</h3>
+            <p class="cert-issuer">Issued by: <strong>Amazon Web Services (AWS)</strong></p>
+            <p class="cert-details">
+              Foundational ML pipelines, feature preparation, AWS compute integration, and deep learning architectures.
+            </p>
+            <a href="https://github.com/Sahithiiii22/Certificates/blob/main/AWS-AIML.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link hover-target">
+              View Certificate PDF &rarr;
+            </a>
+          </div>
+
+          <!-- Cert 2: IBM AI -->
+          <div class="cert-box hover-target">
+            <div class="cert-header">
+              <span class="cert-tag">IBM</span>
+              <span class="cert-date">Verified</span>
+            </div>
+            <h3 class="cert-name">IBM Getting Started with Artificial Intelligence</h3>
+            <p class="cert-issuer">Issued by: <strong>IBM SkillsBuild / Design</strong></p>
+            <p class="cert-details">
+              Core concepts of artificial intelligence, machine learning heuristics, and generative technology foundations.
+            </p>
+            <a href="https://github.com/Sahithiiii22/Certificates/blob/main/IBMDesign20260128-31-yzr05s.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link hover-target">
+              View Certificate PDF &rarr;
+            </a>
+          </div>
+
+          <!-- Cert 3: AICTE Data Science -->
+          <div class="cert-box hover-target">
+            <div class="cert-header">
+              <span class="cert-tag">AICTE / EduSkills</span>
+              <span class="cert-date">Virtual Internship</span>
+            </div>
+            <h3 class="cert-name">AICTE Data Science Master Virtual Internship</h3>
+            <p class="cert-issuer">Issued by: <strong>AICTE &bull; Ministry of Education</strong></p>
+            <p class="cert-details">
+              Applied training in data exploration, predictive classification, regression, and model validation.
+            </p>
+            <a href="https://github.com/Sahithiiii22/Certificates/blob/main/aicte-DataScience.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link hover-target">
+              View Certificate PDF &rarr;
+            </a>
+          </div>
+
+          <!-- Cert 4: Python Udemy -->
+          <div class="cert-box hover-target">
+            <div class="cert-header">
+              <span class="cert-tag">Udemy</span>
+              <span class="cert-date">Verified</span>
+            </div>
+            <h3 class="cert-name">Python Programming Master Course</h3>
+            <p class="cert-issuer">Issued by: <strong>Udemy</strong></p>
+            <p class="cert-details">
+              Object-oriented programming, data structures, algorithm implementation, and modular application development.
+            </p>
+            <a href="https://github.com/Sahithiiii22/Certificates/blob/main/python-Udemy.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link hover-target">
+              View Certificate PDF &rarr;
+            </a>
+          </div>
+
+          <!-- Cert 5: Deloitte -->
+          <div class="cert-box hover-target">
+            <div class="cert-header">
+              <span class="cert-tag">Deloitte</span>
+              <span class="cert-date">Job Simulation</span>
+            </div>
+            <h3 class="cert-name">Deloitte Technology Job Simulation</h3>
+            <p class="cert-issuer">Issued by: <strong>Deloitte / Forage</strong></p>
+            <p class="cert-details">
+              Practical simulation of enterprise technology delivery, data analytics, and business requirement solving.
+            </p>
+            <a href="https://github.com/Sahithiiii22/Certificates/blob/main/Deloitte.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link hover-target">
+              View Certificate PDF &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. RESUME DOWNLOAD SECTION -->
+    <section id="resume" class="editorial-section">
+      <div class="container">
+        <div class="resume-banner hover-target">
+          <div class="resume-banner-content">
+            <span class="banner-pill">Curriculum Vitae</span>
+            <h2 class="banner-title">Review My Full Official Resume</h2>
+            <p class="banner-text">
+              Detailed document summarizing my B.Tech CSE (Data Science) coursework, 9.02/10 CGPA (Department Topper), 
+              Algorithm Aliens internship experience, and AI/ML research projects.
+            </p>
+            <div class="banner-actions">
+              <a href="assets/Sahithi_tarigoppula.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-black hover-target" id="view-resume-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>View Resume PDF</span>
+              </a>
+              <a href="assets/Sahithi_tarigoppula.pdf" download="Sahithi_Tarigoppula_Resume.pdf" class="btn btn-outline hover-target" id="download-resume-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download PDF</span>
+              </a>
+            </div>
+            <p class="file-name-note"><small>File: <code>assets/Sahithi_tarigoppula.pdf</code></small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTACT SECTION -->
+    <section id="contact" class="editorial-section border-top-editorial">
+      <div class="container">
+        <div class="section-title-wrap">
+          <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <h2 class="section-heading hover-target">Contact</h2>
+        </div>
+
+        <div class="contact-editorial-grid">
+          <!-- Left: Direct Info -->
+          <div class="contact-info-panel hover-target">
+            <h3 class="panel-heading">Let's Discuss Opportunities</h3>
+            <p class="panel-desc">
+              I am actively seeking <strong>Data Scientist, Machine Learning Engineer, and AI/ML</strong> roles and internships. 
+              Let's connect and discuss how my skills can contribute to your engineering team.
+            </p>
+
+            <div class="contact-links-stack">
+              <!-- Email -->
+              <div class="contact-card-item hover-target">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="card-label">Direct Email</span>
+                  <a href="mailto:sahithi22t@gmail.com" class="card-link" id="email-link">sahithi22t@gmail.com</a>
+                  <button class="copy-pill hover-target" id="copy-email-btn">Copy to clipboard</button>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-card-item hover-target">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="card-label">Location</span>
+                  <span class="card-link">Hyderabad, Telangana, India</span>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-card-item hover-target">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="card-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/sahithi-tarigoppula-76a454337" target="_blank" rel="noopener noreferrer" class="card-link">linkedin.com/in/sahithi-tarigoppula</a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-card-item hover-target">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="card-label">GitHub</span>
+                  <a href="https://github.com/Sahithiiii22" target="_blank" rel="noopener noreferrer" class="card-link">github.com/Sahithiiii22</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Direct Message Form -->
+          <div class="contact-form-panel hover-target">
+            <h3 class="panel-heading">Send a Direct Message</h3>
+            <p class="panel-sub">Submitting launches your email app pre-populated to <strong>sahithi22t@gmail.com</strong>.</p>
+
+            <form id="contact-form" class="editorial-form" novalidate>
+              <div class="form-row">
+                <label for="form-name">Your Name *</label>
+                <input type="text" id="form-name" placeholder="e.g. Hiring Manager / Recruiter" required class="hover-target">
+              </div>
+
+              <div class="form-row">
+                <label for="form-email">Your Email *</label>
+                <input type="email" id="form-email" placeholder="e.g. recruiter@company.com" required class="hover-target">
+              </div>
+
+              <div class="form-row">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" placeholder="e.g. AI/ML &amp; Data Science Opportunity" class="hover-target">
+              </div>
+
+              <div class="form-row">
+                <label for="form-message">Message *</label>
+                <textarea id="form-message" rows="4" placeholder="Hello Sahithi, we reviewed your projects and would like to invite you..." required class="hover-target"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-black full-width hover-target" id="form-submit-btn">
+                <span>Send via Email Client</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Project Deep-Dive Modal -->
+  <dialog id="project-modal" class="project-dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <h3 id="modal-title" class="dialog-title">Project Details</h3>
+        <button id="modal-close-btn" class="modal-close-btn hover-target" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="dialog-body" id="modal-body-content">
+        <!-- Injected via script.js -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification Feedback -->
+  <div id="toast" class="toast-popup" role="status" aria-live="polite">
+    <span class="toast-check">✓</span>
+    <span class="toast-msg" id="toast-text">Message notification</span>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top" class="back-to-top-btn hover-target" aria-label="Scroll to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <!-- Editorial Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <h2 class="footer-logo hover-target">SAHITHI TARIGOPPULA</h2>
+        <p class="footer-tagline">Data Scientist &bull; Machine Learning Engineer &bull; AI/ML</p>
+        <p class="footer-copy">&copy; <span id="current-year">2026</span> Sahithi Tarigoppula. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-nav">
+          <a href="#home" class="hover-target">Home</a>
+          <a href="#about" class="hover-target">About</a>
+          <a href="#experience" class="hover-target">Experience</a>
+          <a href="#projects" class="hover-target">Projects</a>
+          <a href="#skills" class="hover-target">Tech Stack</a>
+          <a href="#education" class="hover-target">Education</a>
+          <a href="#certificates" class="hover-target">Certificates</a>
+          <a href="#contact" class="hover-target">Contact</a>
+        </div>
+        <p class="footer-github-note">
+          Hosted on GitHub Pages &bull; <a href="https://github.com/Sahithiiii22" target="_blank" rel="noopener noreferrer" class="hover-target">github.com/Sahithiiii22</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
