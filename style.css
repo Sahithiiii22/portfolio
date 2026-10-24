@@ -20,20 +20,20 @@
 
   /* Text Colors — high contrast for readability */
   --text-dark: #000000;
-  --text-dark-muted: rgba(0, 0, 0, 0.75);
-  --text-dark-subtle: rgba(0, 0, 0, 0.55);
+  --text-dark-muted: #1f2937;
+  --text-dark-subtle: #374151;
   --text-light: #ffffff;
-  --text-light-muted: rgba(255, 255, 255, 0.88);
-  --text-light-subtle: rgba(255, 255, 255, 0.72);
+  --text-light-muted: #f1f5f9;
+  --text-light-subtle: #cbd5e1;
 
   /* Borders & Rules */
-  --border-light-section: rgba(0, 0, 0, 0.1);
-  --border-card: rgba(0, 0, 0, 0.06);
-  --border-dark-section: rgba(255, 255, 255, 0.12);
-  --border-dark-hover: rgba(255, 255, 255, 0.35);
+  --border-light-section: rgba(0, 0, 0, 0.12);
+  --border-card: rgba(0, 0, 0, 0.08);
+  --border-dark-section: rgba(255, 255, 255, 0.15);
+  --border-dark-hover: rgba(255, 255, 255, 0.4);
 
-  /* Fonts */
-  --font-headline: 'Anton', sans-serif;
+  /* Fonts — Inter as primary font with system-ui fallbacks */
+  --font-headline: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-code: 'JetBrains Mono', monospace;
 
@@ -67,10 +67,20 @@ html, body {
   background-color: var(--bg-canvas);
   color: var(--text-dark);
   font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--nav-height) + 20px);
+}
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 16px;
+    line-height: 1.7;
+  }
 }
 
 /* Hide standard cursor on desktop devices to prioritize custom cursor */
@@ -137,24 +147,17 @@ html, body {
 /* --------------------------------------------------------------------------
    5. Typography Standards
    -------------------------------------------------------------------------- */
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-headline);
+  font-weight: 700;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
   color: inherit;
-  line-height: 1.05;
-}
-
-h3, h4, h5, h6 {
-  font-family: var(--font-body);
-  letter-spacing: -0.01em;
-  text-transform: none;
-  color: inherit;
-  line-height: 1.35;
-  font-weight: 500;
+  line-height: 1.25;
 }
 
 p {
+  font-family: var(--font-body);
+  font-weight: 400;
   line-height: 1.7;
 }
 
@@ -182,12 +185,17 @@ a {
 }
 
 .section-heading {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-family: var(--font-headline);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 700;
   letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
 .section-subtitle-text {
-  font-size: 1.1rem;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 400;
   color: #1a1a1a;
   max-width: 680px;
   margin-bottom: 48px;
@@ -313,17 +321,19 @@ a {
 
 .brand-name {
   font-family: var(--font-headline);
-  font-size: 2.2rem;
+  font-size: 1.9rem;
+  font-weight: 700;
   letter-spacing: -0.02em;
   color: #000000;
 }
 
 .nav-tagline {
   display: block;
-  font-size: 0.85rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--text-dark-muted);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 1024px) {
@@ -339,7 +349,8 @@ a {
 }
 
 .nav-link {
-  font-size: 0.9rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--text-dark-muted);
   transition: color var(--transition-fast);
@@ -479,8 +490,9 @@ a {
 
 .hero-title {
   font-family: var(--font-headline);
-  font-size: clamp(4.5rem, 13vw, 140px);
-  line-height: 0.85;
+  font-size: clamp(3.2rem, 8.5vw, 96px);
+  font-weight: 700;
+  line-height: 0.95;
   letter-spacing: -0.03em;
   color: #000000;
   margin-bottom: 20px;
@@ -489,8 +501,9 @@ a {
 
 .hero-role-line {
   font-family: var(--font-headline);
-  font-size: clamp(1.5rem, 3.5vw, 2.4rem);
-  color: rgba(0, 0, 0, 0.65);
+  font-size: clamp(1.35rem, 3vw, 2.2rem);
+  font-weight: 600;
+  color: #1f2937;
   margin-bottom: 18px;
   display: flex;
   align-items: center;
@@ -853,13 +866,14 @@ a {
 }
 
 .tag-pill {
-  font-family: var(--font-code);
-  font-size: 0.8rem;
-  padding: 5px 12px;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 6px 14px;
   background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: var(--radius-pill);
-  color: #000000;
+  color: #111111;
 }
 
 /* --------------------------------------------------------------------------
@@ -956,19 +970,20 @@ a {
 }
 
 .card-title {
-  font-family: var(--font-body);
+  font-family: var(--font-headline);
   font-size: 1.35rem;
-  font-weight: 400;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  letter-spacing: -0.015em;
   text-transform: none;
   color: #ffffff;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 .card-desc {
+  font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.92);
+  color: #f1f5f9;
   font-weight: 400;
 }
 
@@ -977,17 +992,18 @@ a {
   flex-direction: column;
   gap: 8px;
   background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 16px;
   padding: 16px 20px;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #f8fafc;
+  font-weight: 400;
 }
 
 .card-key-points strong {
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .card-tech-pills {
@@ -998,13 +1014,13 @@ a {
 }
 
 .dark-tag {
-  font-family: var(--font-code);
-  font-size: 0.78rem;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
   font-weight: 500;
-  padding: 5px 12px;
+  padding: 6px 14px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   color: #ffffff;
 }
 
@@ -1045,9 +1061,9 @@ a {
 }
 
 .tech-cat-title {
-  font-family: var(--font-body);
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-family: var(--font-headline);
+  font-size: 1.25rem;
+  font-weight: 700;
   text-transform: none;
   letter-spacing: -0.01em;
   color: #ffffff;
@@ -1064,10 +1080,10 @@ a {
 .tech-badge {
   font-family: var(--font-body);
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
   padding: 6px 14px;
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-pill);
   color: #ffffff;
   transition: background-color var(--transition-fast);
@@ -1104,22 +1120,24 @@ a {
 }
 
 .edu-degree {
-  font-family: var(--font-body);
+  font-family: var(--font-headline);
   font-size: 1.55rem;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: none;
   letter-spacing: -0.015em;
   color: #000000;
 }
 
 .edu-branch {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 600;
   color: var(--text-dark-muted);
   margin-top: 4px;
 }
 
 .edu-college {
+  font-family: var(--font-body);
   font-size: 1.05rem;
   font-weight: 500;
   color: var(--text-dark-subtle);
@@ -1139,6 +1157,7 @@ a {
 .edu-cgpa-pill .cgpa-val {
   font-family: var(--font-headline);
   font-size: 1.75rem;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -1149,9 +1168,11 @@ a {
 }
 
 .edu-summary-text {
-  font-size: 1.1rem;
-  line-height: 1.75;
-  color: var(--text-dark-muted);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #111111;
+  font-weight: 400;
 }
 
 .edu-coursework-title {
@@ -1231,9 +1252,9 @@ a {
 }
 
 .cert-name {
-  font-family: var(--font-body);
+  font-family: var(--font-headline);
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: none;
   letter-spacing: -0.01em;
   color: #000000;
@@ -1243,7 +1264,7 @@ a {
 .cert-issuer {
   font-size: 0.95rem;
   font-weight: 500;
-  color: #1a1a1a;
+  color: #111111;
 }
 
 .cert-issuer strong {
@@ -1253,8 +1274,8 @@ a {
 
 .cert-details {
   font-size: 0.95rem;
-  line-height: 1.65;
-  color: #1a1a1a;
+  line-height: 1.7;
+  color: #111111;
   font-weight: 400;
 }
 
@@ -1310,6 +1331,7 @@ a {
 .banner-title {
   font-family: var(--font-headline);
   font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
   color: #000000;
 }
 
@@ -1532,9 +1554,9 @@ a {
 }
 
 .dialog-title {
-  font-family: var(--font-body);
+  font-family: var(--font-headline);
   font-size: 1.45rem;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: none;
   letter-spacing: -0.015em;
   color: #000000;
@@ -1561,9 +1583,9 @@ a {
 }
 
 .modal-h4 {
-  font-family: var(--font-body);
+  font-family: var(--font-headline);
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: none;
   letter-spacing: -0.01em;
   color: #000000;
@@ -1571,9 +1593,11 @@ a {
 }
 
 .modal-p {
+  font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--text-dark-muted);
+  color: #1f2937;
+  font-weight: 400;
 }
 
 .modal-tech-list {
@@ -1697,7 +1721,8 @@ a {
 
 .footer-logo {
   font-family: var(--font-headline);
-  font-size: 2.2rem;
+  font-size: 2rem;
+  font-weight: 700;
   color: #000000;
 }
 

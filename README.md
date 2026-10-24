@@ -5,7 +5,7 @@ A modern, high-impact developer portfolio website for **Sahithi Tarigoppula**, a
 Inspired by the editorial brutalist design aesthetic of [Akhilan's Portfolio](https://akhilan9.github.io/Portfolio/):
 - **Warm Editorial Color Scheme**: `#e8e6df` warm parchment/paper canvas paired with bold `#000000` deep black contrast sections.
 - **Custom Magnetic Difference Cursor**: Interactive spring cursor that inverts across backgrounds (`mix-blend-mode: difference`) and expands smoothly over interactive elements.
-- **Bold Brutalist Typography**: Editorial headlines powered by Google Fonts `Anton` paired with clean, readable `Inter` and `JetBrains Mono`.
+- **Clean Modern Typography**: High-contrast, crisp typography powered by Google Fonts `Inter` (weights 400, 500, 600, 700) paired with `JetBrains Mono` for code elements.
 - **Pure Native Tech Stack**: 100% HTML5, CSS3, and Vanilla JavaScript with zero external frameworks or paid dependencies.
 
 ---
@@ -21,7 +21,7 @@ Inspired by the editorial brutalist design aesthetic of [Akhilan's Portfolio](ht
 
 ```text
 portfolio/
-├── index.html                  # Semantic HTML5 layout with Anton & Inter typography
+├── index.html                  # Semantic HTML5 layout with high-readability Inter typography
 ├── style.css                   # Custom CSS with #e8e6df palette, difference cursor, and dark contrast sections
 ├── script.js                   # Vanilla JS: magnetic spring cursor, dynamic role rotator, modals
 ├── README.md                   # Complete guide & documentation
