@@ -18,13 +18,13 @@
   --bg-dark-card: rgba(255, 255, 255, 0.05);
   --bg-dark-card-hover: rgba(255, 255, 255, 0.09);
 
-  /* Text Colors */
+  /* Text Colors — high contrast for readability */
   --text-dark: #000000;
-  --text-dark-muted: rgba(0, 0, 0, 0.65);
-  --text-dark-subtle: rgba(0, 0, 0, 0.45);
+  --text-dark-muted: rgba(0, 0, 0, 0.75);
+  --text-dark-subtle: rgba(0, 0, 0, 0.55);
   --text-light: #ffffff;
-  --text-light-muted: rgba(255, 255, 255, 0.7);
-  --text-light-subtle: rgba(255, 255, 255, 0.45);
+  --text-light-muted: rgba(255, 255, 255, 0.88);
+  --text-light-subtle: rgba(255, 255, 255, 0.72);
 
   /* Borders & Rules */
   --border-light-section: rgba(0, 0, 0, 0.1);
@@ -178,10 +178,11 @@ a {
 }
 
 .section-subtitle-text {
-  font-size: 1.15rem;
-  color: var(--text-dark-muted);
+  font-size: 1.1rem;
+  color: #1a1a1a;
   max-width: 680px;
   margin-bottom: 48px;
+  line-height: 1.7;
 }
 
 .editorial-section {
@@ -886,8 +887,8 @@ a {
 }
 
 .project-card {
-  background-color: var(--bg-dark-card);
-  border: 1px solid var(--border-dark-section);
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius-card);
   overflow: hidden;
   display: flex;
@@ -897,8 +898,9 @@ a {
 
 .project-card:hover {
   transform: translateY(-8px);
-  border-color: var(--border-dark-hover);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.09);
 }
 
 .card-media {
@@ -937,10 +939,10 @@ a {
 }
 
 .card-content {
-  padding: 36px;
+  padding: 32px 36px 36px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
   flex-grow: 1;
 }
 
@@ -953,25 +955,28 @@ a {
 }
 
 .card-desc {
-  font-size: 0.975rem;
-  line-height: 1.65;
-  color: var(--text-light-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 400;
 }
 
 .card-key-points {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 16px;
-  padding: 14px 18px;
-  font-size: 0.85rem;
-  color: var(--text-light-subtle);
+  padding: 16px 20px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .card-key-points strong {
   color: #ffffff;
+  font-weight: 700;
 }
 
 .card-tech-pills {
@@ -983,10 +988,12 @@ a {
 
 .dark-tag {
   font-family: var(--font-code);
-  font-size: 0.75rem;
-  padding: 4px 10px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 5px 12px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   color: #ffffff;
 }
 
@@ -997,7 +1004,7 @@ a {
   gap: 14px;
   margin-top: auto;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 /* --------------------------------------------------------------------------
@@ -1146,28 +1153,29 @@ a {
 }
 
 /* --------------------------------------------------------------------------
-   14. Certificates & Achievements Section (Light)
+   14. Certificates & Achievements Section (Clean White Cards)
    -------------------------------------------------------------------------- */
 .certificates-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 28px;
 }
 
 .cert-box {
-  background-color: var(--bg-card-light);
-  border: 1px solid var(--border-card);
-  border-radius: var(--radius-card);
-  padding: 36px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  padding: 32px 36px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  gap: 12px;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
 }
 
 .cert-box:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.15);
 }
 
 .cert-header {
@@ -1175,18 +1183,20 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  margin-bottom: 4px;
 }
 
 .cert-tag {
   font-family: var(--font-code);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 4px 12px;
+  letter-spacing: 0.04em;
+  padding: 5px 14px;
   border-radius: var(--radius-pill);
-  background-color: rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: #000000;
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
 }
 
 .cert-tag.gold {
@@ -1198,7 +1208,8 @@ a {
 .cert-date {
   font-family: var(--font-code);
   font-size: 0.8rem;
-  color: var(--text-dark-subtle);
+  font-weight: 600;
+  color: #000000;
 }
 
 .cert-name {
@@ -1210,13 +1221,20 @@ a {
 
 .cert-issuer {
   font-size: 0.95rem;
-  color: var(--text-dark-muted);
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.cert-issuer strong {
+  font-weight: 700;
+  color: #000000;
 }
 
 .cert-details {
-  font-size: 0.925rem;
-  line-height: 1.6;
-  color: var(--text-dark-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #1a1a1a;
+  font-weight: 400;
 }
 
 .cert-pdf-link {
@@ -1228,11 +1246,12 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   transition: transform var(--transition-fast);
 }
 
 .cert-pdf-link:hover {
-  transform: translateX(4px);
+  transform: translateX(6px);
   text-decoration: underline;
 }
 
